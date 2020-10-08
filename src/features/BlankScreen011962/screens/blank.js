@@ -23,7 +23,10 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = {
+    TextInput_5:
+      "Sample text input value Sample text input value Sample text input value Sample text input value Sample text input value"
+  }
 
   render = () => (
     <View style={styles.View_1}>
@@ -31,6 +34,14 @@ export default class Blank extends React.Component {
         This is screen 0. This is screen 0. This is screen 0. This is screen 0.
         ^ 3 empty lines. This is screen 0. This is screen 0.
       </Text>
+      <TextInput
+        placeholder="Sample text input placeholder"
+        editable={true}
+        multiline={true}
+        style={styles.TextInput_5}
+        value={this.state.TextInput_5}
+        onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
+      />
     </View>
   )
 }
@@ -162,6 +173,67 @@ const styles = StyleSheet.create({
     lineHeight: 12,
     letterSpacing: 0
   },
+
+  View_1: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "flex-start",
+    alignItems: "stretch",
+    alignContent: "stretch",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0
+  },
+
+  Text_3: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
   View_1: {
     marginLeft: 0,
     marginRight: 0,
@@ -201,6 +273,37 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     paddingBottom: 5,
     overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  TextInput_5: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "scroll",
     fontSize: 12,
     color: "#000000",
     backgroundColor: "#ffffff",
